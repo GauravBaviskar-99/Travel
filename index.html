@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,300;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,300;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html">
+                <img class="logo" src="Images/travel-logo-design.jpg" alt="">
+            </a>
+            <div class="nav-links" id="navlinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <!-- <li><a href="">COURSE</a></li> -->
+                    <li><a href="">OUR PRODUCTS</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>We Dreame Of Travel</h1>
+            <p>We travel not to escape life but for life not to escape us
+            </p>
+            <a href="" class="hero-btn">Visit Us To Know More</a>
+        </div>
+
+    </section>
+
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showMenu() {
+            navlinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navlinks.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+
+</html>
